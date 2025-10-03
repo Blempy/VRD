@@ -102,3 +102,6 @@ OUTPUT: JSON structure ci-dessus. Pas de texte hors JSON.
 - Faut-il verifier d'autres criteres PMR (bandes podotactiles, abord de traverses) ?
 - Integration avec mesures reeles issues d'un script (extraction auto du DWG) : format a preciser.
 - Processus de validation humaine : revue systematique ou par echantillonnage ?
+## Execution & tests
+- Lancer un test unitaire : `python src/run_normative_agent.py tests/normative_agent/test_case_001.json --pretty`.
+- Executer toute la suite : `pwsh -File scripts/run_tests.ps1` (option `-Pretty` pour affichege lisible).
