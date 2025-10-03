@@ -1,0 +1,64 @@
+﻿{
+  "intake_payload": {
+    "project_id": "ACCES-2025-TEST-002",
+    "client_type": "mairie",
+    "site_location": "Rue Beta",
+    "project_length_m": 80.0,
+    "existing_width_m": 1.2,
+    "existing_slope_percent": 4.0,
+    "required_min_width_m": 1.4,
+    "required_max_slope_percent": 5.0,
+    "dwg_path": "data/intake/rue_beta.dwg",
+    "spec_doc_refs": ["data/normes/catalogue_pmr.pdf"],
+    "utility_networks": ["eclairage", "telecom"]
+  },
+  "measurements": [
+    {
+      "chainage_m": 0,
+      "segment_length_m": 20,
+      "width_m": 1.2,
+      "longitudinal_slope_percent": 4.8,
+      "transversal_slope_percent": 2.5
+    },
+    {
+      "chainage_m": 20,
+      "segment_length_m": 20,
+      "width_m": 1.38,
+      "longitudinal_slope_percent": 4.2,
+      "transversal_slope_percent": 2.0
+    },
+    {
+      "chainage_m": 40,
+      "segment_length_m": 20,
+      "width_m": 1.45,
+      "longitudinal_slope_percent": 3.5,
+      "transversal_slope_percent": 1.8
+    }
+  ],
+  "norm_catalog": [
+    {
+      "reference": "Guide accessibilite 2023, section 2.1",
+      "requirement": "Largeur utile >= 1.40 m"
+    },
+    {
+      "reference": "Guide accessibilite 2023, section 2.3",
+      "requirement": "Pente longitudinale <= 5 %"
+    }
+  ],
+  "expected_output": {
+    "non_compliance": [
+      {
+        "type": "width",
+        "chainage_start_m": 0,
+        "chainage_end_m": 20,
+        "severity": "high"
+      },
+      {
+        "type": "width",
+        "chainage_start_m": 20,
+        "chainage_end_m": 40,
+        "severity": "medium"
+      }
+    ]
+  }
+}
