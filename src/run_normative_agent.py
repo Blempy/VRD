@@ -10,7 +10,7 @@ from agents.analyse_normative import NormativeAnalysisAgent
 
 
 def load_payload(path: Path) -> Dict[str, Any]:
-    with path.open("r", encoding="utf-8") as handle:
+    with path.open("r", encoding="utf-8-sig") as handle:
         return json.load(handle)
 
 
