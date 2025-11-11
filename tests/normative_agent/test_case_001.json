@@ -1,0 +1,54 @@
+﻿{
+    "intake_payload":  {
+                           "project_id":  "ACCES-2025-TEST-001",
+                           "client_type":  "mairie",
+                           "site_location":  "Rue Alpha",
+                           "project_length_m":  50.0,
+                           "existing_width_m":  1.45,
+                           "existing_slope_percent":  4.5,
+                           "required_min_width_m":  1.4,
+                           "required_max_slope_percent":  5.0,
+                           "dwg_path":  "data/intake/rue_alpha.dwg",
+                           "spec_doc_refs":  [
+                                                 "data/normes/catalogue_pmr.pdf"
+                                             ],
+                           "utility_networks":  [
+                                                    "eclairage"
+                                                ],
+                           "traffic_management_required":  false
+                       },
+    "measurements":  [
+                         {
+                             "chainage_m":  0,
+                             "segment_length_m":  25,
+                             "width_m":  1.42,
+                             "longitudinal_slope_percent":  4.0,
+                             "transversal_slope_percent":  2.0
+                         },
+                         {
+                             "chainage_m":  25,
+                             "segment_length_m":  25,
+                             "width_m":  1.45,
+                             "longitudinal_slope_percent":  4.3,
+                             "transversal_slope_percent":  1.5
+                         }
+                     ],
+    "norm_catalog":  [
+                         {
+                             "reference":  "Guide accessibilite 2023, section 2.1",
+                             "requirement":  "Largeur utile \u003e= 1.40 m"
+                         },
+                         {
+                             "reference":  "Guide accessibilite 2023, section 2.3",
+                             "requirement":  "Pente longitudinale \u003c= 5 %"
+                         }
+                     ],
+    "expected_output":  {
+                            "non_compliance":  [
+
+                                               ],
+                            "recommendations":  [
+
+                                                ]
+                        }
+}
